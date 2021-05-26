@@ -89,7 +89,7 @@ def close():
     addr = ai[0][-1]
     se.connect(addr)
     se = ssl.wrap_socket(se)
-    send_data = "token=【Slackのトークン】&channel=%23lab_open&text=Closed the lab from ESP32"
+    send_data = "token=【Slackのトークン】&channel=%23【チャンネル名】&text=Closed the lab from ESP32"
     se.write(b"POST /api/chat.postMessage HTTP/1.1\r\n")
     se.write(b"Host: slack.com\r\n")
     se.write(b"Accept: */*\r\n")
