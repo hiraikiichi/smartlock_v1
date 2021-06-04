@@ -8,3 +8,9 @@
 
 uPyCraft 1.0
 
+## フォルダ詳細
+- LabKey2 v1.stl # 土台の3Dデータ
+- main.py # メインプログラム
+
+## Usage
+ESP32は起動直後```boot.py``` → ```main.py```の順に実行されるのでぶち込めばおｋ
